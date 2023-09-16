@@ -34,6 +34,13 @@ class ViewController: UIViewController, AVCaptureAudioDataOutputSampleBufferDele
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        // setting button
+        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        button.backgroundColor = .blue
+        button.setTitle("Record", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        self.view.addSubview(button)
+        
         
         audioEngine.connect(audioEngine.inputNode, to: audioEngine.outputNode, format: audioEngine.inputNode.inputFormat(forBus: 0))
         try! audioEngine.start()

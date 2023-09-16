@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490C089D2AB587F9005455D4 /* CommonMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490C089C2AB587F9005455D4 /* CommonMacro.swift */; };
 		E2EE25F82A32540900F85D1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE25F72A32540900F85D1E /* AppDelegate.swift */; };
 		E2EE25FA2A32540900F85D1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE25F92A32540900F85D1E /* SceneDelegate.swift */; };
 		E2EE25FC2A32540900F85D1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE25FB2A32540900F85D1E /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		490C089C2AB587F9005455D4 /* CommonMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMacro.swift; sourceTree = "<group>"; };
 		E2EE25F42A32540900F85D1E /* Capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EE25F72A32540900F85D1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2EE25F92A32540900F85D1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		490C089B2AB587E3005455D4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				490C089C2AB587F9005455D4 /* CommonMacro.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		E2EE25EB2A32540900F85D1E = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 		E2EE25F62A32540900F85D1E /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+				490C089B2AB587E3005455D4 /* Utils */,
 				E2EE25F72A32540900F85D1E /* AppDelegate.swift */,
 				E2EE25F92A32540900F85D1E /* SceneDelegate.swift */,
 				E2EE25FB2A32540900F85D1E /* ViewController.swift */,
@@ -263,6 +274,7 @@
 			files = (
 				E2EE25FC2A32540900F85D1E /* ViewController.swift in Sources */,
 				E2EE26282A32558200F85D1E /* PreviewView.swift in Sources */,
+				490C089D2AB587F9005455D4 /* CommonMacro.swift in Sources */,
 				E2EE25F82A32540900F85D1E /* AppDelegate.swift in Sources */,
 				E2EE25FA2A32540900F85D1E /* SceneDelegate.swift in Sources */,
 			);
@@ -446,10 +458,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HU574X42G2;
+				DEVELOPMENT_TEAM = HLTF3ZTB98;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Capture/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use Camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Use Microphone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -460,7 +474,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.Tom.Capture;
+				PRODUCT_BUNDLE_IDENTIFIER = org.inntechy.Capture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -478,10 +492,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HU574X42G2;
+				DEVELOPMENT_TEAM = HLTF3ZTB98;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Capture/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use Camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Use Microphone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -492,7 +508,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.Tom.Capture;
+				PRODUCT_BUNDLE_IDENTIFIER = org.inntechy.Capture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
